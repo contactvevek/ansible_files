@@ -1,0 +1,9 @@
+---
+- name: install nginx
+  hosts: all
+  become: yes
+  tasks:
+  - name: kuch bhi
+    apt:
+      name: nginx
+      state: present
