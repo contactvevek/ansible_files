@@ -1,0 +1,11 @@
+[production]
+node1   ansible_host=10.128.0.6 
+
+[development]
+web1    ansible_host=10.128.0.7
+
+[master]
+localhost ansible_connection=local
+
+[windows]
+winserver ansible_host=34.57.87.66 ansible_user=cloudthatoct_5b561f1 ansible_password="IZ]OX(doP%sQ$LA" ansible_port=5986 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_transport=basic
