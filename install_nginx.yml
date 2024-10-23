@@ -8,6 +8,12 @@
       name: apache2
       update_cache: yes
       state: latest
+  - name: Task3 will setup attributes for file
+    file:
+      path: /var/www/html/index.html
+      owner: www-data
+      group: www-data
+      mode: 0644
   - name: service start
     service:
       name:apache2
