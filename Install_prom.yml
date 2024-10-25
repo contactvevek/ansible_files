@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: downloading the package
+    unarchive:
+     src: "https://github.com/prometheus/prometheus/releases/download/v2.18.1/prometheus-2.18.1.linux-amd64.tar.gz"
+     dest: /root
+     remote_src: yes
+  - name: start service
+    service:
+     name: prometheus
+     state: started
+     enabled: yes
