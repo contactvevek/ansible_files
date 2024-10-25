@@ -1,5 +1,3 @@
 [production]
-node1   ansible_host=10.128.0.6 ansible_user=cloudthatoct_5b561f13_376b_4d92_
+prom-1   ansible_host=10.128.0.11 ansible_user=cloudthatoct_5b561f13_376b_4d92_
 
-[development]
-web1    ansible_host=10.128.0.7 ansible_user=cloudthatoct_5b561f13_376b_4d92_
